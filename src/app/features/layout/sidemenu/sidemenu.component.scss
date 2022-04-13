@@ -1,0 +1,122 @@
+.bankinit-icone {
+    position: relative;
+    left: -15px;
+    top: 16px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}  
+
+.bankinit {
+    position: relative;
+    top: 15px;
+    color: rgba(255, 255, 255, 1);
+    display: inline-block;
+    font-size: 1.2em;
+    height: 40px;
+}
+
+/* Liens */
+a {
+    display: block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    height: 40px;
+}
+nav {
+    width: 300px;
+    height: 625px;
+    text-align: center;
+    background-color: rgb(112, 13, 218);
+    border: 2px solid rgb(199, 171, 230);
+}
+
+/* liste */
+.listePosition {
+    position: relative;
+    top: 10px;
+}
+.liste {
+    position: relative;
+    top: 10px;
+    left: 25px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(112, 13, 218, 1);
+    border-radius: 30px/30px;
+    width: 250px;
+    height: 40px;
+}
+.liste:hover {
+    color: rgba(112, 13, 218, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+
+/* enregistrer */
+.enregistrerPosition {
+    position: absolute;
+    left: 35px;
+    top: 10px;
+}
+.enregistrer {
+    position: relative;
+    top: 10px;
+    left: 25px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(112, 13, 218, 1);
+    border-radius: 30px/30px;
+    width: 250px;
+    height: 40px;
+}
+.enregistrer:hover {
+    color: rgba(112, 13, 218, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* calendrier */
+.calendrierPosition {
+    position: absolute;
+    left: 28px;
+    top: 10px;
+}
+.calendrier {
+    position: relative;
+    top: 10px;
+    left: 25px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(112, 13, 218, 1);
+    border-radius: 30px/30px;
+    width: 250px;
+    height: 40px;
+}
+.calendrier:hover {
+    color: rgba(112, 13, 218, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+
+/* dashboard */
+.dashboardPosition {
+    position: absolute;
+    left: 90px;
+    top: 10px;
+}
+.dashboard {
+    position: relative;
+    top: 10px;
+    left: 25px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(112, 13, 218, 1);
+    border-radius: 30px/30px;
+    width: 250px;
+    height: 40px;
+}
+.dashboard:hover {
+    position: relative;
+    left: 25px;
+    color: rgba(112, 13, 218, 1);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 30px/30px;
+    width: 250px;
+    height: 40px;
+}
