@@ -15,7 +15,7 @@ import { LoanModule } from '../../features/loan/loan.module';
   imports: [
     CommonModule,
     PageLayoutRoutingModule,
-    LoanModule
+    LoanModule,
   ]
 })
 export class PageLayoutModule { }
