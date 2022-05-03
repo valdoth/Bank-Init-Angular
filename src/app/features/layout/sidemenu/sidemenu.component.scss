@@ -1,5 +1,5 @@
 nav {
-    background-color: rgba(112, 13, 218, 1);
+    background-color: rgb(106, 123, 103);
     display: flex;
     flex-direction: column;
     width: 20vw;
@@ -8,12 +8,15 @@ nav {
     align-items: center;
     text-align: center;
     margin-left: 0;
+    z-index: 99;
 }
 
 .bankinitLogo {
     margin: 70px 0 40px 0;
+    display: flex;
     align-items: center;
     text-align: center;
+    gap: 10px;
 }
 
 .bankinitLogo img {
@@ -23,6 +26,7 @@ nav {
 .bankinitLogo span {
     font-weight: bold;
     font-size: 2rem;
+    color: #fff;
 }
 
 .bankinitOptions {
@@ -42,16 +46,20 @@ nav {
     color: #fff;
     text-align: center;
     text-decoration: none;
-    padding: 10px 10px;
+    padding: 10px 30px;
+    font-weight: 400;
+    border: 1px solid #fff;
+    border-radius: 15px;
 }
 
 .bankinitOptions a:hover {
     display: block;
-    color: rgba(112, 13, 218, 1);
-    background-color: rgba(255, 255, 255, 1);
+    color: rgb(106, 123, 103);
+    background-color: #C8D0C6;
     border-radius: 15px;
+    border: 1px solid rgb(106, 123, 103);
 }
 
 li {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }

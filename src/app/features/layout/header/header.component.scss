@@ -1,27 +1,35 @@
 .menu {
     display: block;
-    background-color: rgb(235, 225, 225);
+    background: #fff;
+    z-index: 7;
 }
 
 header{
     display: flex;
-    color: rgba(112, 13, 218, 1);
+    color: #A5A7A5;
     width: 100%;
     height: 75px;
     position: fixed;
+    z-index: 7;
+    align-items: center;
+    text-align: center;
 }
 .select{
     display: flex;
+    color: #A5A7A5;
     justify-content: flex-end;
     position: absolute;
-    background-color: rgb(235, 225, 225);
+    top: 0;
     right: 0;
     left: 20vw;  
+    background: #fff;
+    border-bottom: 2px solid #B3BEB1;
 }
 
 
 a{
     text-decoration: none;
+    color: #A5A7A5;
 }
 hr{
     margin-top: 2px;
@@ -33,5 +41,9 @@ hr{
 }
 
 .dropdown-item{
-    color: rgba(13, 110, 253, 1);
+    color: rgb(34, 31, 31);
+}
+
+a::after {
+    content: none;
 }

@@ -1,0 +1,43 @@
+.title {
+    background: #E9ECEF;
+}
+
+form {
+    margin: auto;
+}
+
+form div h1 .title {
+    background-color: #a39f9f;
+    width: 100vw;
+}
+
+form div h1 .test {
+    background-color: crimson;
+    padding: auto;
+    margin: auto;
+}
+
+form div #note {
+    color: #a39f9f;
+    font-size: x-small;
+}
+
+form div span {
+    color: gray;
+}
+
+.button {
+    background: #D8B66F;
+    color: black;
+    border-radius: 25px;
+    padding: 10px 30px;
+    margin: 10px;
+}
+
+.button:hover {
+    background: #fff;
+    color: #D8B66F;
+    border-radius: 25px;
+    padding: 10px 30px;
+    border: 2px solid #D8B66F;
+}
