@@ -13,11 +13,11 @@ export class ServiceService {
   ]
   constructor() { }
   getAllMenu(): Menu[]{
-    console.log(this.menus);
+    // console.log(this.menus);
     return this.menus;
   }
   getMenu(index: number): Menu{
-    console.log(this.menus[index]);
+    // console.log(this.menus[index]);
     return this.menus[index];
   }
 }
