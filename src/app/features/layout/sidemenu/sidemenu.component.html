@@ -1,14 +1,30 @@
-<section class="test">
-    <nav>
-        <div class="bankinit-logo">
-            <img src="../../../../assets/images/bankinit-icone.svg" alt="bankinit-icone" class="bankinit-icone" />
-            <h1 class="bankinit">Bank Init</h1>
-        </div>
-        <div class="bankinit-options">
-            <a href="#" class="liste"><div class="listePosition">Liste des prêts</div></a>
-            <a href="#" class="enregistrer"><div class="enregistrerPosition">Enregistrer un nouveau prêt</div></a>
-            <a href="#" class="calendrier"><div class="calendrierPosition">Calendrier de remboursement</div></a>
-            <a href="#" class="dashboard"><div class="dashboardPosition">Dashboard</div></a>
-        </div>
-    </nav>
-</section>
+<nav>
+    <div class="bankinitLogo">
+        <img src="assets/images/bankinit-icone.svg" alt="bankinit-icone" />
+        <span class="bankinit">Bank Init</span>
+    </div>
+    <div class="bankinitOptions">
+        <ul>
+            <li>
+                <a routerLink="#">
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <a routerLink="loan/list">
+                    Liste des prêts
+                </a>
+            </li>
+            <li>
+                <a routerLink="loan/create">
+                    Enregistrer un nouveau prêt
+                </a>
+            </li>
+            <li>
+                <a routerLink="#">
+                    Calendrier de remboursement
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

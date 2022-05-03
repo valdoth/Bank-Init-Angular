@@ -6,9 +6,6 @@ import { PageLoanComponent } from './page-loan.component';
 
 const routes: Routes = [
   {
-    path: "",
-    component: PageLoanComponent
-  }, {
     path:"create",
     component:LoanCreateComponent
   }, {

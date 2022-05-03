@@ -1,127 +1,57 @@
-.test {
-    height: 100%;
-    position: fixed;
-}
-
-.bankinit-icone {
-    position: relative;
-    left: -15px;
-    top: 16px;
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-}  
-
-.bankinit {
-    position: relative;
-    top: 15px;
-    color: rgba(255, 255, 255, 1);
-    display: inline-block;
-    font-size: 1.2em;
-    height: 40px;
-}
-
-/* Liens */
-a {
-    display: block;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 1);
-    height: 40px;
-}
 nav {
-    width: 300px;
+    background-color: rgba(112, 13, 218, 1);
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
     height: 100vh;
+    position: fixed;
+    align-items: center;
     text-align: center;
-    background-color: rgb(112, 13, 218);
-    border: 2px solid rgb(199, 171, 230);
+    margin-left: 0;
 }
 
-/* liste */
-.listePosition {
-    position: relative;
-    top: 10px;
+.bankinitLogo {
+    margin: 70px 0 40px 0;
+    align-items: center;
+    text-align: center;
 }
-.liste {
-    position: relative;
-    top: 10px;
-    left: 25px;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(112, 13, 218, 1);
-    border-radius: 30px/30px;
-    width: 250px;
-    height: 40px;
+
+.bankinitLogo img {
+    width: 50px;
 }
-.liste:hover {
+
+.bankinitLogo span {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.bankinitOptions {
+    display: flex;
+    flex-direction: column;
+}
+
+.bankinitOptions ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+
+.bankinitOptions a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.bankinitOptions a:hover {
+    display: block;
     color: rgba(112, 13, 218, 1);
     background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
 }
 
-
-/* enregistrer */
-.enregistrerPosition {
-    position: absolute;
-    left: 35px;
-    top: 10px;
-}
-.enregistrer {
-    position: relative;
-    top: 10px;
-    left: 25px;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(112, 13, 218, 1);
-    border-radius: 30px/30px;
-    width: 250px;
-    height: 40px;
-}
-.enregistrer:hover {
-    color: rgba(112, 13, 218, 1);
-    background-color: rgba(255, 255, 255, 1);
-}
-
-/* calendrier */
-.calendrierPosition {
-    position: absolute;
-    left: 28px;
-    top: 10px;
-}
-.calendrier {
-    position: relative;
-    top: 10px;
-    left: 25px;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(112, 13, 218, 1);
-    border-radius: 30px/30px;
-    width: 250px;
-    height: 40px;
-}
-.calendrier:hover {
-    color: rgba(112, 13, 218, 1);
-    background-color: rgba(255, 255, 255, 1);
-}
-
-
-/* dashboard */
-.dashboardPosition {
-    position: absolute;
-    left: 90px;
-    top: 10px;
-}
-.dashboard {
-    position: relative;
-    top: 10px;
-    left: 25px;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(112, 13, 218, 1);
-    border-radius: 30px/30px;
-    width: 250px;
-    height: 40px;
-}
-.dashboard:hover {
-    position: relative;
-    left: 25px;
-    color: rgba(112, 13, 218, 1);
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 30px/30px;
-    width: 250px;
-    height: 40px;
+li {
+    margin-bottom: 30px;
 }

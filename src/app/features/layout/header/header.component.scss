@@ -1,4 +1,4 @@
-menu {
+.menu {
     display: block;
     background-color: rgb(235, 225, 225);
 }
@@ -8,8 +8,6 @@ header{
     color: rgba(112, 13, 218, 1);
     width: 100%;
     height: 75px;
-    top: 0;
-    margin: 0;
     position: fixed;
 }
 .select{
@@ -18,8 +16,7 @@ header{
     position: absolute;
     background-color: rgb(235, 225, 225);
     right: 0;
-    left: 300px;
-  
+    left: 20vw;  
 }
 
 
