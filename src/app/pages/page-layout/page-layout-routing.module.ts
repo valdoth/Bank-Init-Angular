@@ -2,9 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PageLayoutComponent } from './page-layout.component';
 import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
-import { DashboardComponent } from '../dashboard/dashboard.component';
 import { CalendarComponent } from '../calendar/calendar.component';
-
+import { DashboardComponent } from '../dashboard/dashboard.component';
 const routes: Routes = [
   {
     path: "",
