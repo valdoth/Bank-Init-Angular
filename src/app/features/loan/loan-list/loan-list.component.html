@@ -1,1 +1,91 @@
+<<<<<<< HEAD
 <h1>List Create</h1>
+=======
+<div class="container">
+  <div class="searched-client">
+    <span>Client : <b>{{ researchedClient }}</b></span>
+  </div>
+  <div class="search-bar">
+    <input type="text" class="inputClient" maxlength="40" [(ngModel)]="researchedClient" placeholder="Rechercher nom">
+    <span class="bi bi-search"></span>
+  </div>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ACTIONS</th>
+      <th scope="col">CLIENT</th>
+      <th scope="col">MONTANT PRET</th>
+      <th scope="col">DATE DU PRET</th>
+      <th scope="col">FIN DU CONTRACT</th>
+      <th scope="col">MONTANT INTERNE</th>
+      <th scope="col">POURCENTAGE</th>
+      <th scope="col">MODE DE PAIEMENT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let client of searchedClients; let indexOfClient = index">
+      <tr *ngIf="indexOfClient%2 == 0">
+        <td>
+          <button type="button" class="btn btn-primary btn-circle btn-vert">
+              <span class="bi bi-eye"></span>
+          </button>
+          <button type="button" class="btn btn-primary btn-circle btn-jaune">
+              <span class="bi bi-pencil"></span>
+          </button>
+        </td>
+        <td>{{ client.client }}</td>
+        <td>{{ client.montant_pret }} Ariary</td>
+        <td>{{ client.date_du_pret }}</td>
+        <td>{{ client.fin_du_contract }}</td>
+        <td>{{ client.montant_interne }} Ariary</td>
+        <td>{{ client.pourcentage }} %</td>
+        <td>{{ client.mode_de_paiement }}</td>
+      </tr>
+      <tr *ngIf="indexOfClient%2 == 1" class="ligne-gris">
+        <td>
+          <button type="button" class="btn btn-primary btn-circle btn-vert">
+              <span class="bi bi-eye"></span>
+          </button>
+          <button type="button" class="btn btn-primary btn-circle btn-gris">
+            <span class="bi bi-pencil"></span>
+          </button>
+        </td>
+        <td>{{ client.client }}</td>
+        <td>{{ client.montant_pret }} Ariary</td>
+        <td>{{ client.date_du_pret }}</td>
+        <td>{{ client.fin_du_contract }}</td>
+        <td>{{ client.montant_interne }} Ariary</td>
+        <td>{{ client.pourcentage }} %</td>
+        <td>{{ client.mode_de_paiement }}</td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
+
+<div>
+  <nav>
+    <ul class="pagination">
+      <li class="page-item-previous">
+        <a class="page-link previous" href="#" aria-label="Previous">
+          <span class="bi-bootstrap bi-cursor-fill bi--xl bi--rotate-225 previousArrow"></span>
+        </a>
+      </li>
+        <li class="page-item"><a class="page-link first" href="#">1</a></li>
+        <li class="page-item"><a class="page-link second" href="#">2</a></li>
+        <li class="page-item"><a class="page-link third" href="#">3</a></li>
+        <li class="page-item"><a class="page-link point bi--xs bi-arrow-down-left-circle-fill"></a></li>
+        <li class="page-item"><a class="page-link point bi--xs bi-arrow-down-left-circle-fill"></a></li>
+        <li class="page-item"><a class="page-link point bi--xs bi-arrow-down-left-circle-fill"></a></li>
+        <li class="page-item"><a class="page-link point invisible"></a></li>
+        <li class="page-item"><a class="page-link last" href="#"><span class="centeredTen">10</span></a></li>
+      <li class="page-item-next">
+        <a class="page-link next" href="#" aria-label="Next">
+          <span class="bi-bootstrap bi-cursor-fill bi--xl bi--rotate-45 nextArrow"></span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+>>>>>>> list

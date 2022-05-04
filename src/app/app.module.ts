@@ -19,7 +19,8 @@ import { SidemenuComponent } from 'src/app/features/layout/sidemenu/sidemenu.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
