@@ -4,49 +4,49 @@
         <h4 class="text-nowrap bd-highlight"> Formulaire de saisie d'un prêt</h4>
     </div>
     
-    <form>
-        <div class="row space" >
-          <div class="form-group col-md-4">
+    <form  [formGroup]="formulaire" (submit)="onSubmit(formulaire)" >
+        <div class="row space">
+          <div class="col-md-4">
             <label for="inputResponsable">Responsable</label>
-            <input type="text" class="form-control" id="inputResponsable" placeholder="Agent : ">
+            <input type="text" class="form-control" id="inputResponsable" placeholder="Agent : " formControlName = "agent" #agent>
           </div>
-          <div class="form-group col-md-4">
+          <div class=" col-md-4">
             <label for="inputMontant">Montant prêt</label>
             <div class="input-group">
                 <span class="input-group-text">ar</span>
-                <input type="number" class="form-control" id="inputMontant" placeholder="Montant prêt">
+                <input type="number" class="form-control" id="inputMontant" placeholder="Montant prêt" formControlName = "montant" #montant required>
             </div>
           </div>
-          <div class="form-group col-md-4">
+          <div class="col-md-4">
             <label for="inputPourcentage">Pourcentage</label>
-            <input type="number" class="form-control" id="inputPourcentage" placeholder="0 %">
+            <input type="number" class="form-control" id="inputPourcentage" placeholder="0 %" formControlName = "pourcentage" #pourcentage>
           </div>
         </div>
         
-        <div class="row space">
-            <div class="form-group col-md-6">
+        <div class="row space" >
+            <div class="col-md-6">
                 <label for="inputDate">Date du prêt</label>
-                <input type="date" class="form-control" id="inputDate" placeholder="dd/mm/yyyy">
+                <input type="text" class="form-control" id="inputDate" placeholder="dd/mm/yyyy" formControlName = "date_prêt" #date_prêt>
               </div>
-            <div class="form-group col-md-6">
+            <div class="col-md-6">
                 <label for="inputDate">Date fin de remboursement</label>
-                <input type="date" class="form-control" id="inputDate" placeholder="dd/mm/yyyy">
+                <input type="date" class="form-control" id="inputDate" placeholder="dd/mm/yyyy" formControlName = "date_remboursement" #date_remboursement>
             </div>
         </div>
         
         <div class="row space">
-          <div class="form-group col-md-6">
+          <div class="col-md-6">
             <label for="inputRemboursement">Mode de remboursement</label>
-            <select id="inputRemboursement" class="form-control"> -->
+            <select id="inputRemboursement" class="form-control" formControlName = "mode_remboursement" #mode_remboursement>
               <option selected>Mensuel</option>
               <option>Bimestre</option>
               <option>Trimestre</option>
               <option>Semestre</option> 
             </select>
           </div>
-          <div class="form-group col-md-6">
+          <div class="col-md-6">
             <label for="inputPaiement">Mode de paiement capitale</label>
-            <select  id="inputPaiement" class="form-control">
+            <select  id="inputPaiement" class="form-control" formControlName = "mode_paiement_capitale" #mode_paiement_capitale>
              <option disable="disabled" class="selected">Mvola</option>
               <option>AirtelMoney</option>
               <option>OrangeMoney</option>
@@ -55,25 +55,26 @@
         </div>
 
         <div class="row space">
-            <div class="form-group col-md-6">
+            <div class="col-md-6">
                 <label for="inputComment">Commentaires</label>
-                <textarea type="text" class="form-control" id="inputComment6" placeholder="Commentaires"> </textarea>
+                <textarea type="text" class="form-control" id="inputComment6" placeholder="Commentaires" formControlName = "comment" #comment> </textarea>
                 <div id="inputComment" class="form-text">
                     Ajouter des notes içi.
                   </div>
             </div>
-            <div class="form-group col-md-6">
+            <div class="col-md-6">
                 <label for="inputInterêt">Mode de paiement interêt</label>
-                <select id="inputInterêt" class="form-control">
+                <select id="inputInterêt" class="form-control" formControlName = "mode_paiement_intérêt" #mode_paiement_intérêt>
                     <option selected>Mvola</option>
-                    <option>AirtelMoney</option>
-                    <option>OrangeMoney</option>
+                    <option value="airtelmoney">AirtelMoney</option>
+                    <option value="orangemoney">OrangeMoney</option>
+                    <option value="espece">En espèce</option>
                   </select>
             </div>
         </div>
+        
+        <div class="foot d-flex justify-content-end">
+          <input type="submit" class="btn bouton mr-6" value="Enregistrer">
+        </div>
       </form>
-
-      <div class="row-enregistrer d-flex justify-content-end space">
-          <button type="submit" class="btn">Enregistrer</button>
       </div>
-</div>
