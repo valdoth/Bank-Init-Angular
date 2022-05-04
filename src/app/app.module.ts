@@ -21,11 +21,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-<<<<<<< HEAD
 
-=======
     ReactiveFormsModule
->>>>>>> origin/formulaire
   ],
   providers: [],
   bootstrap: [AppComponent]
