@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+import data from 'src/app/@shared/data/list';
 
 @Component({
   selector: 'app-loan-list',
@@ -7,7 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoanListComponent implements OnInit {
 
-  constructor() { }
+  public list;
+  // Pagination parameters.
+  p: Number = 1;
+  count: Number = 5;
+
+  constructor() {
+    console.log(data);
+    this.list = data;
+  }
 
   ngOnInit(): void {
   }

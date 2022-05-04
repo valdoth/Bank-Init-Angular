@@ -9,7 +9,7 @@ import { LoanListComponent } from './loan-list/loan-list.component';
     LoanListComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ],
   exports : [
     LoanCreateComponent,
