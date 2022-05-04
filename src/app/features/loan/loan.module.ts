@@ -11,10 +11,7 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
-<<<<<<< HEAD
-=======
     FormsModule
->>>>>>> list
   ],
   exports : [
     LoanCreateComponent,

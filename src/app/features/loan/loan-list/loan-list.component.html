@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<h1>List Create</h1>
-=======
 <div class="container">
   <div class="searched-client">
     <span>Client : <b>{{ researchedClient }}</b></span>
@@ -36,12 +33,12 @@
           </button>
         </td>
         <td>{{ client.client }}</td>
-        <td>{{ client.montant_pret }} Ariary</td>
-        <td>{{ client.date_du_pret }}</td>
-        <td>{{ client.fin_du_contract }}</td>
-        <td>{{ client.montant_interne }} Ariary</td>
+        <td>{{ client.montant }} Ariary</td>
+        <td>{{ client.datePret }}</td>
+        <td>{{ client.dateFinContrat }}</td>
+        <td>{{ client.montantInteret }} Ariary</td>
         <td>{{ client.pourcentage }} %</td>
-        <td>{{ client.mode_de_paiement }}</td>
+        <td>{{ client.modePaiement }}</td>
       </tr>
       <tr *ngIf="indexOfClient%2 == 1" class="ligne-gris">
         <td>
@@ -53,12 +50,12 @@
           </button>
         </td>
         <td>{{ client.client }}</td>
-        <td>{{ client.montant_pret }} Ariary</td>
-        <td>{{ client.date_du_pret }}</td>
-        <td>{{ client.fin_du_contract }}</td>
-        <td>{{ client.montant_interne }} Ariary</td>
+        <td>{{ client.montant }} Ariary</td>
+        <td>{{ client.datePret }}</td>
+        <td>{{ client.dateFinContrat }}</td>
+        <td>{{ client.montantInteret }} Ariary</td>
         <td>{{ client.pourcentage }} %</td>
-        <td>{{ client.mode_de_paiement }}</td>
+        <td>{{ client.modePaiement }}</td>
       </tr>
     </ng-container>
   </tbody>
@@ -88,4 +85,3 @@
     </ul>
   </nav>
 </div>
->>>>>>> list
