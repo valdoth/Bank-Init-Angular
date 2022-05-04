@@ -63,3 +63,11 @@ nav {
 li {
     margin-bottom: 10px;
 }
+
+.active {
+    display: block;
+    color: rgb(106, 123, 103);
+    background-color: #C8D0C6;
+    border-radius: 15px;
+    border: 1px solid rgb(106, 123, 103);
+}
