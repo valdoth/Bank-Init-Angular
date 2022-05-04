@@ -1,5 +1,5 @@
 nav {
-    background-color: rgba(112, 13, 218, 1);
+    background-color: rgba(106, 128, 103, 1);
     display: flex;
     flex-direction: column;
     width: 20vw;
@@ -21,8 +21,12 @@ nav {
 }
 
 .bankinitLogo span {
+    position: relative;
+    top: 6px;
+    right: -10px;
     font-weight: bold;
     font-size: 2rem;
+    color: white;
 }
 
 .bankinitOptions {
@@ -47,7 +51,7 @@ nav {
 
 .bankinitOptions a:hover {
     display: block;
-    color: rgba(112, 13, 218, 1);
+    color: rgba(106, 128, 103, 1);
     background-color: rgba(255, 255, 255, 1);
     border-radius: 15px;
 }
