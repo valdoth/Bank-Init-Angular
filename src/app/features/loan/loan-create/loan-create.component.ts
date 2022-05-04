@@ -13,8 +13,8 @@ export class LoanCreateComponent implements OnInit {
   constructor(private forms: FormBuilder) {
     this.formulaire = this.forms.group({
       "agent": [null, Validators.required],
-      "montant": [5000, Validators.required],
-      "pourcentage":[0, Validators.required],
+      "montant": [Validators.required],
+      "pourcentage":[Validators.required],
       "date_prêt": [this.date.toLocaleDateString(), Validators.required],
       "date_remboursement": [null, Validators.required],
       "mode_remboursement": [null, Validators.required],

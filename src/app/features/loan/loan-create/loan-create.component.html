@@ -14,19 +14,19 @@
             <label for="inputMontant">Montant prêt</label>
             <div class="input-group">
                 <span class="input-group-text">ar</span>
-                <input type="number" class="form-control" id="inputMontant" placeholder="Montant prêt" formControlName = "montant" #montant required>
+                <input type="number" class="form-control" id="inputMontant" placeholder="Montant prêt" min="0" max="4000000" formControlName = "montant" #montant required>
             </div>
           </div>
           <div class="col-md-4">
             <label for="inputPourcentage">Pourcentage</label>
-            <input type="number" class="form-control" id="inputPourcentage" placeholder="0 %" formControlName = "pourcentage" #pourcentage>
+            <input type="number" class="form-control" id="inputPourcentage" placeholder="0 %" formControlName ="pourcentage" min="0" max="100" #pourcentage>
           </div>
         </div>
         
         <div class="row space" >
             <div class="col-md-6">
                 <label for="inputDate">Date du prêt</label>
-                <input type="text" class="form-control" id="inputDate" placeholder="dd/mm/yyyy" formControlName = "date_prêt" #date_prêt>
+                <input type="date" class="form-control" id="inputDate" placeholder="dd/mm/yyyy" formControlName = "date_prêt" #date_prêt>
               </div>
             <div class="col-md-6">
                 <label for="inputDate">Date fin de remboursement</label>
