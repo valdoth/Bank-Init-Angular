@@ -1,0 +1,125 @@
+th {
+    font-weight: bold;
+    text-align: center;
+    vertical-align: bottom;
+}
+thead {
+    height: 50px;
+    border-bottom: 2px solid rgb(209, 220, 230);
+}
+tr {
+    font-size: 10px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+.btn-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+.btn-vert {
+    background-color: rgba(107,128,104,1);
+}
+.btn-jaune {
+    background-color: rgba(204, 164, 0, 1);
+}
+.btn-gris {
+    background-color: rgba(149,149,149,1);
+}
+.ligne-gris {
+    background-color: rgba(246,248,245,1);
+}
+.btn:focus {
+    box-shadow: rgba(0, 0, 0, 0.25) 5px 5px 20px;
+}
+button {
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 5px 5px 5px;
+}
+span {
+    position: relative;
+    top: -5px;
+    right: 8px;
+}
+.bi-search {
+    position: relative;
+    top: 1px;
+    right: 5px;
+}
+.container {
+    position: relative;
+    height: 20px;
+}
+.searched-client {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+.inputClient {
+    position: relative;
+    right: 10px;
+    width: 200px;
+}
+.search-bar {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.page-link {
+    background-color: rgba(107,128,104,1);
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 0px;
+    color: rgba(255,255,255,1);
+    text-align: center;
+}
+.point {
+    position: relative;
+    top: 3px;
+    color: rgba(107,128,104,1);
+    background-color: rgba(255,255,255,0);
+}
+.previous {
+    margin-right: 20px;
+}
+.first {
+    margin-right: 6px;
+}
+.second {
+    margin-right: 6px;
+}
+.last {
+    margin-right: 20px;
+}
+.point.invisible {
+    margin-right: -10px;
+}
+.bi-arrow-down-left-circle-fill {
+    margin-right: -18px;
+}
+.previousArrow {
+    position: relative;
+    top: -1px;
+}
+.nextArrow {
+    position: relative;
+    top: -2px;
+}
+.centeredTen {
+    position: relative;
+    top: 0px;
+    right: 4px;
+}
+nav {
+    position: absolute;
+    left: 363px;
+    width: 284px;
+    height: 34px;
+}
