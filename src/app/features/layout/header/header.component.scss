@@ -1,11 +1,16 @@
 .menu {
     display: block;
+<<<<<<< HEAD
     background: #fff;
     z-index: 7;
+=======
+    background-color: #fff;
+>>>>>>> origin/formulaire
 }
 
 header{
     display: flex;
+<<<<<<< HEAD
     color: #A5A7A5;
     width: 100%;
     height: 75px;
@@ -13,17 +18,31 @@ header{
     z-index: 7;
     align-items: center;
     text-align: center;
+=======
+    color: rgba(51, 50, 50, 0.877);
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    
+>>>>>>> origin/formulaire
 }
 .select{
     display: flex;
     color: #A5A7A5;
     justify-content: flex-end;
     position: absolute;
+<<<<<<< HEAD
     top: 0;
     right: 0;
     left: 20vw;  
     background: #fff;
     border-bottom: 2px solid #B3BEB1;
+=======
+    background-color: #fff;
+    right: 0;
+    left: 20vw; 
+    border-color: rgba(4, 77, 4, 0.5); 
+>>>>>>> origin/formulaire
 }
 
 
@@ -41,9 +60,24 @@ hr{
 }
 
 .dropdown-item{
+<<<<<<< HEAD
     color: rgb(34, 31, 31);
 }
 
 a::after {
     content: none;
+=======
+    color: rgba(51, 50, 50, 0.877);
+}
+
+.dropLink {
+    padding-bottom: 20px;
+    // margin-bottom: 20px;
+    color: rgba(51, 50, 50, 0.877);
+    font-size: 15px;
+}
+
+#img {
+    padding-top: 10px;
+>>>>>>> origin/formulaire
 }

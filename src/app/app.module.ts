@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from 'src/app/features/layout/header/header.component';
 import { BreadcrumbComponent } from 'src/app/features/layout/breadcrumb/breadcrumb.component';
 import { SidemenuComponent } from 'src/app/features/layout/sidemenu/sidemenu.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -20,7 +21,11 @@ import { SidemenuComponent } from 'src/app/features/layout/sidemenu/sidemenu.com
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+<<<<<<< HEAD
 
+=======
+    ReactiveFormsModule
+>>>>>>> origin/formulaire
   ],
   providers: [],
   bootstrap: [AppComponent]
