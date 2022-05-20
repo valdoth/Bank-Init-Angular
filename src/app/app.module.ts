@@ -9,7 +9,6 @@ import { BreadcrumbComponent } from 'src/app/features/layout/breadcrumb/breadcru
 import { SidemenuComponent } from 'src/app/features/layout/sidemenu/sidemenu.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,8 +20,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

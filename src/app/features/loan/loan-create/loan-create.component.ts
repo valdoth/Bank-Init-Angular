@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { of, Observable, map, observable } from 'rxjs';
 
 @Component({
   selector: 'app-loan-create',
@@ -7,19 +8,26 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./loan-create.component.scss']
 })
 export class LoanCreateComponent implements OnInit {
+
   public date: Date = new Date();
+  
   formulaire: FormGroup;
+
+  submitted = false;
+
+  usersFormulaire$:any;
 
   constructor(private forms: FormBuilder) {
     this.formulaire = this.forms.group({
-      "agent": [null, Validators.required],
-      "montant": [Validators.required],
-      "pourcentage":[Validators.required],
-      "date_prêt": [this.date.toLocaleDateString(), Validators.required],
+      "responsable": [null, Validators.required],
+      "client": [null, Validators.required],
+      "montant": [null, Validators.required],
+      "pourcentage":[null, Validators.required],
+      "frequence": [null, Validators.required],
+      "date_pret": [this.date.toLocaleDateString(), Validators.required],
       "date_remboursement": [null, Validators.required],
       "mode_remboursement": [null, Validators.required],
-      "mode_paiement_capitale": [null, Validators.required],
-      "mode_paiement_intérêt": [null, Validators.required],
+      "mode_paiement": [null, Validators.required],
       "comment": [null, Validators.required]
     })
    }
@@ -32,7 +40,9 @@ export class LoanCreateComponent implements OnInit {
   }
 
   onSubmit(formulaire:FormGroup) {
-    console.log(formulaire)
-  }
+    this.submitted = true,
 
+    console.log(JSON.stringify(this.formulaire.value, null))
+  }
+  
 }
